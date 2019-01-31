@@ -1,0 +1,16 @@
+------------------------------------------------------------------------------------------------------------------------
+Client: OTTOS / MK
+Campaign: none
+Campaign ID: none
+Network: Bluewin.ch (Media)
+Media: Bluewin
+------------------------------------------------------------------------------------------------------------------------
+
+
+************************************************************************************************************************
+Tag 1. "Liquid SidebarAd" (Line Item: SidebarAd_DE, Size: 1x1, Type: HTML)
+************************************************************************************************************************
+
+Serving method: 3'rd party standard javascript tag:
+<script id="iframe_test" language="javascript" src="https://mkcdn.ams3.digitaloceanspaces.com/mediakanzlei_liquid_sidebar_test/mediakanzlei_liquid_sidebar001/liquid_sidebar.js"></script>
+

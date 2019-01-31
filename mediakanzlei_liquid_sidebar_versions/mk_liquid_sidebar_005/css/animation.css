@@ -1,0 +1,117 @@
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.button {
+  margin: 5px;
+}
+
+.paragraph {
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.call_to_action img {
+  padding: 10px;
+  object-fit: contain;
+}
+
+.call_to_action.div-block-8 {
+  max-width: 85vw;
+  max-height: 85vh;
+}
+
+.w-container{
+  perspective: 3000px;
+}
+.div-block-8 {
+  transform-origin: 0% 0%;
+  transform-style: preserve-3d;
+  transition: transform .7s cubic-bezier(0.65, 0, 0.34, 1);
+}
+
+/* .w-inline-block:hover {
+cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAgCAYAAAD0S5PyAAAEI0lEQVRIiZ2VS0xcVRjH/+fcc++8H0BpQabYAloQSQDtQwPVaKwLNmqMC5MuTBfduHXhRuPSlYmJiSsTdVE3Rruxxpg2CnFhIlYSS4DwKEqBDMNjmMe9M+dhvjMMDtXEjl9yZu6cufd3vtf/uzDG1NcptZP9ReU294wxzzbs/+di9EGm1u/OlG9cG2JCIPrq1dssmhjBAxo/uO1y8PPNISgFUy5DrswPA+hrCmIKexPwS2CJFCAEdH6Htnubgui97TOmXARzBJjjwJQLtN3SDCRsgnJXPTfgDlDx6SraDMQ1shqG1gBjAHkSBICSTUHAhAtwDpA3nMNUK7QiTUEoBEZeWGM1mNZuMxBKQPHILvEYU81AFBNuFYeeULk0lVqawH9LLswYU/E/BNBjlPwKWr9zP0TYczklhNXyQeWNp8Dc0Hvy7ly49PUniFx67ao4M3y59MVHaXdg9CXv/PObphIYKHmBRWJvE8RAuIaqone24JzIIPT0i6hM/xhjkThC4xOQa8ueATy9m4O8twK34n/s37oOvbWB6CtXuvhBSFzvZCF6H4N37jlU524j+Ok7VOd/q/UNicwR4G3HbRuoP5dginno3CbkylwfeRLRu7m4OzAKb+g8gslvoLLr4C3HwJOtYBSirNQq5ggg8AHh2v+U+AMm8GMEOSZOPZpEJUD5+y9B37y9Ezq7BqcjY3+DmpnSphUM52DkHT/QrjEuXQ2b4j4qv07aB1g8RYKE0/kwnK4eVBfvgCfSNS+kBPPCMAQjwRLQ9QKCjAVTN2yXskQaJijBlArwnrgIuTADtboA3tJ+WDmeagPzQvYg26ShyC4ldEjnt8FjyRo9HEPk5Sswvo/K9BRYNA6WaqUTobY2wFOtcDq6oYv7VmdOZ3dBmGrFPRSf1uDxFE05GwLlhMru9g7CFPIIX5wAC0esd+GnLkHTofFUUfBY8h4J0CgJFolC5TZsab3BswhdeAG6kIdcnrVQfjwDuTQLlV2DNzJmDzV+aUmwWOJb3tH9ulz83SaNgE7HScjVeRiaK5xDrq/C6x9BdXbahkChB7euQ5zuhzc6PkWJ/dx78pkfWChsc2LDouaKJaG21qE2VuGk2gAvBBZP2oOsRhNpAqwC+MwWmyfSb7iPnwusbg4GnAXRA44LFo0BfhnGL1vPaAY7mR44J/tIjKo+7Ze9kbH3RaYXprCLRkVTVaxmlmdtaSGrdi80Oj4F4FM0vDLIPnAHz+bqVTpi9ZZnDLqYh9s/At7+0LuN86Ruu/xE5ho1k6kGRyEEtnAFJjwKZQbAzcZ58ve9XmjSKPmm3s6CxRL/mGC2q6nVo/E79w+luqUAPCJOD1gFs9C/zGkl663eBaAfwCKAauPLesk0Z8oYk6FnG3Pyv60xHPvuBLD/ADRKWJ4CBIC/AEU3J0qovwE2AAAAAElFTkSuQmCC'), pointer;
+}
+
+.div-block-9 {
+url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAgCAYAAAD0S5PyAAAEI0lEQVRIiZ2VS0xcVRjH/+fcc++8H0BpQabYAloQSQDtQwPVaKwLNmqMC5MuTBfduHXhRuPSlYmJiSsTdVE3Rruxxpg2CnFhIlYSS4DwKEqBDMNjmMe9M+dhvjMMDtXEjl9yZu6cufd3vtf/uzDG1NcptZP9ReU294wxzzbs/+di9EGm1u/OlG9cG2JCIPrq1dssmhjBAxo/uO1y8PPNISgFUy5DrswPA+hrCmIKexPwS2CJFCAEdH6Htnubgui97TOmXARzBJjjwJQLtN3SDCRsgnJXPTfgDlDx6SraDMQ1shqG1gBjAHkSBICSTUHAhAtwDpA3nMNUK7QiTUEoBEZeWGM1mNZuMxBKQPHILvEYU81AFBNuFYeeULk0lVqawH9LLswYU/E/BNBjlPwKWr9zP0TYczklhNXyQeWNp8Dc0Hvy7ly49PUniFx67ao4M3y59MVHaXdg9CXv/PObphIYKHmBRWJvE8RAuIaqone24JzIIPT0i6hM/xhjkThC4xOQa8ueATy9m4O8twK34n/s37oOvbWB6CtXuvhBSFzvZCF6H4N37jlU524j+Ok7VOd/q/UNicwR4G3HbRuoP5dginno3CbkylwfeRLRu7m4OzAKb+g8gslvoLLr4C3HwJOtYBSirNQq5ggg8AHh2v+U+AMm8GMEOSZOPZpEJUD5+y9B37y9Ezq7BqcjY3+DmpnSphUM52DkHT/QrjEuXQ2b4j4qv07aB1g8RYKE0/kwnK4eVBfvgCfSNS+kBPPCMAQjwRLQ9QKCjAVTN2yXskQaJijBlArwnrgIuTADtboA3tJ+WDmeagPzQvYg26ShyC4ldEjnt8FjyRo9HEPk5Sswvo/K9BRYNA6WaqUTobY2wFOtcDq6oYv7VmdOZ3dBmGrFPRSf1uDxFE05GwLlhMru9g7CFPIIX5wAC0esd+GnLkHTofFUUfBY8h4J0CgJFolC5TZsab3BswhdeAG6kIdcnrVQfjwDuTQLlV2DNzJmDzV+aUmwWOJb3tH9ulz83SaNgE7HScjVeRiaK5xDrq/C6x9BdXbahkChB7euQ5zuhzc6PkWJ/dx78pkfWChsc2LDouaKJaG21qE2VuGk2gAvBBZP2oOsRhNpAqwC+MwWmyfSb7iPnwusbg4GnAXRA44LFo0BfhnGL1vPaAY7mR44J/tIjKo+7Ze9kbH3RaYXprCLRkVTVaxmlmdtaSGrdi80Oj4F4FM0vDLIPnAHz+bqVTpi9ZZnDLqYh9s/At7+0LuN86Ruu/xE5ho1k6kGRyEEtnAFJjwKZQbAzcZ58ve9XmjSKPmm3s6CxRL/mGC2q6nVo/E79w+luqUAPCJOD1gFs9C/zGkl663eBaAfwCKAauPLesk0Z8oYk6FnG3Pyv60xHPvuBLD/ADRKWJ4CBIC/AEU3J0qovwE2AAAAAElFTkSuQmCC'), pointer;
+}
+
+body:hover {
+cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAgCAYAAAD0S5PyAAAEI0lEQVRIiZ2VS0xcVRjH/+fcc++8H0BpQabYAloQSQDtQwPVaKwLNmqMC5MuTBfduHXhRuPSlYmJiSsTdVE3Rruxxpg2CnFhIlYSS4DwKEqBDMNjmMe9M+dhvjMMDtXEjl9yZu6cufd3vtf/uzDG1NcptZP9ReU294wxzzbs/+di9EGm1u/OlG9cG2JCIPrq1dssmhjBAxo/uO1y8PPNISgFUy5DrswPA+hrCmIKexPwS2CJFCAEdH6Htnubgui97TOmXARzBJjjwJQLtN3SDCRsgnJXPTfgDlDx6SraDMQ1shqG1gBjAHkSBICSTUHAhAtwDpA3nMNUK7QiTUEoBEZeWGM1mNZuMxBKQPHILvEYU81AFBNuFYeeULk0lVqawH9LLswYU/E/BNBjlPwKWr9zP0TYczklhNXyQeWNp8Dc0Hvy7ly49PUniFx67ao4M3y59MVHaXdg9CXv/PObphIYKHmBRWJvE8RAuIaqone24JzIIPT0i6hM/xhjkThC4xOQa8ueATy9m4O8twK34n/s37oOvbWB6CtXuvhBSFzvZCF6H4N37jlU524j+Ok7VOd/q/UNicwR4G3HbRuoP5dginno3CbkylwfeRLRu7m4OzAKb+g8gslvoLLr4C3HwJOtYBSirNQq5ggg8AHh2v+U+AMm8GMEOSZOPZpEJUD5+y9B37y9Ezq7BqcjY3+DmpnSphUM52DkHT/QrjEuXQ2b4j4qv07aB1g8RYKE0/kwnK4eVBfvgCfSNS+kBPPCMAQjwRLQ9QKCjAVTN2yXskQaJijBlArwnrgIuTADtboA3tJ+WDmeagPzQvYg26ShyC4ldEjnt8FjyRo9HEPk5Sswvo/K9BRYNA6WaqUTobY2wFOtcDq6oYv7VmdOZ3dBmGrFPRSf1uDxFE05GwLlhMru9g7CFPIIX5wAC0esd+GnLkHTofFUUfBY8h4J0CgJFolC5TZsab3BswhdeAG6kIdcnrVQfjwDuTQLlV2DNzJmDzV+aUmwWOJb3tH9ulz83SaNgE7HScjVeRiaK5xDrq/C6x9BdXbahkChB7euQ5zuhzc6PkWJ/dx78pkfWChsc2LDouaKJaG21qE2VuGk2gAvBBZP2oOsRhNpAqwC+MwWmyfSb7iPnwusbg4GnAXRA44LFo0BfhnGL1vPaAY7mR44J/tIjKo+7Ze9kbH3RaYXprCLRkVTVaxmlmdtaSGrdi80Oj4F4FM0vDLIPnAHz+bqVTpi9ZZnDLqYh9s/At7+0LuN86Ruu/xE5ho1k6kGRyEEtnAFJjwKZQbAzcZ58ve9XmjSKPmm3s6CxRL/mGC2q6nVo/E79w+luqUAPCJOD1gFs9C/zGkl663eBaAfwCKAauPLesk0Z8oYk6FnG3Pyv60xHPvuBLD/ADRKWJ4CBIC/AEU3J0qovwE2AAAAAElFTkSuQmCC'), pointer;
+} */
+
+
+/* box-shadow-animation */
+@keyframes box-shadow-animation {
+    25%  {box-shadow: none;}
+    45%  {box-shadow: 15px 17px 45px 2px rgba(0,0,0,0.35)}
+    60%  {opacity: 1; box-shadow: 15px 17px 70px 2px rgba(0,0,0,0.5)}
+    70%  {opacity: 1; box-shadow: 15px 17px 70px 2px rgba(0,0,0,0.0)}
+    80%  {opacity: 0; box-shadow: 15px 17px 70px 2px rgba(0,0,0,0.0)}
+    100% {opacity: 0; visibility: : hidden; box-shadow: 15px 17px 100px 2px rgba(0,0,0,0)}
+}
+/* The element to apply the animation to */
+.box-shadow-animation {
+    transform: rotateY(-90deg);
+    animation-name: box-shadow-animation;
+    animation-duration: .7s;
+    animation-timing-function: cubic-bezier(0.48, 0.95, 0.57999, 0.98);
+}
+/* box-shadow-animation-reverse */
+@keyframes box-shadow-animation-reverse {
+    0%   {opacity: 0; box-shadow: 15px 17px 100px 2px rgba(0,0,0,0)}
+    20%  {opacity: 0; box-shadow: 15px 17px 70px 2px rgba(0,0,0,0.0)}
+    30%  {opacity: 1; box-shadow: 15px 17px 70px 2px rgba(0,0,0,0.0)}
+    40%  {opacity: 1; box-shadow: 15px 17px 70px 2px rgba(0,0,0,0.5)}
+    55%  {box-shadow: 15px 17px 45px 2px rgba(0,0,0,0.35)}
+    100%  {box-shadow: none;}
+}
+/* The element to apply the animation to */
+.box-shadow-animation-reverse {
+    transform: rotateY(0deg);
+    animation-name: box-shadow-animation-reverse;
+    animation-duration: .7s;
+    animation-timing-function: cubic-bezier(0.48, 0.95, 0.57999, 0.98);
+}
+.image-4 {
+  backface-visibility: hidden;
+}
+
+.arrows:hover{ transform: scale(1.3); transform-origin: center; opacity: 0.8;}
+
+
+/* following elements disappear to maintain a clean add */
+
+@media screen and (max-width: 400px) , screen and (max-height: 500px) {
+   .paragraph, .button {
+     display: none;
+   }
+   #pageCount {
+     display: none;
+   }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .box-shadow-animation {
+      animation-name: none;
+      transform: none;
+      visibility: hidden;
+    }
+    .box-shadow-animation-reverse {
+      animation-name: none;
+      transform: none;
+      visibility: visible;
+    }
+    .arrows:hover{ transform: none; transform-origin: center; opacity: 1}
+}
+
+/* need to counter max-width set by webflow otherwise add gets misplaced */
+
+@media screen and (max-width: 991px) {
+  .w-container {
+    max-width: none;
+  }

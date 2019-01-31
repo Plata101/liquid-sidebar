@@ -1,0 +1,421 @@
+.body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #903;
+}
+
+.grid {
+  position: absolute;
+  z-index: 10;
+  overflow: visible;
+  width: 594px;
+  height: 842px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  background-color: transparent;
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+}
+
+.grid:hover {
+  background-color: transparent;
+}
+
+.image-4 {
+  position: absolute;
+  overflow: visible;
+  width: 595px;
+  height: 842px;
+}
+
+.div-block-8 {
+  position: relative;
+  display: block;
+  width: 595px;
+  height: 842px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.link-block-3 {
+  background-color: rgba(19, 154, 245, 0);
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+}
+
+.link-block-3:hover {
+  background-color: rgba(19, 154, 245, .47);
+}
+
+.call_to_action.div-block-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.paragraph {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.button {
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 5px;
+  background-color: #ac1a35;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.column {
+  height: 100%;
+  padding-left: 0px;
+}
+
+.columns {
+  width: 100%;
+  height: 20%;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 10px;
+}
+
+.column-2 {
+  height: 100%;
+}
+
+.column-3 {
+  height: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.column-4 {
+  height: 100%;
+}
+
+.link-block-4 {
+  width: 100%;
+  height: 100%;
+  padding-right: 0px;
+}
+
+.link-block-4:hover {
+  background-color: rgba(84, 137, 233, .5);
+}
+
+.link-block-5 {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+}
+
+.link-block-5:hover {
+  background-color: rgba(84, 137, 233, .5);
+  -webkit-filter: none;
+  filter: none;
+}
+
+.link-block-6 {
+  width: 100%;
+  height: 100%;
+}
+
+.link-block-6:hover {
+  background-color: rgba(84, 137, 233, .5);
+}
+
+.div-block-9 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.link-block-7 {
+  display: block;
+  width: 25%;
+  height: 20%;
+  float: left;
+  line-height: 0px;
+  cursor: pointer;
+}
+
+.link-block-7:hover {
+  float: none;
+  background-color: rgba(0, 152, 255, .5);
+}
+
+.link-block-8 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-9 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-10 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-11 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-12 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-13 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-14 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-15 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-16 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-17 {
+  width: 25%;
+  height: 20%;
+  line-height: 0px;
+}
+
+.link-block-17:hover {
+  background-color: rgba(0, 152, 255, .5);
+}
+
+.link-block-18 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-19 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-20 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-21 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-22 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-23 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-24 {
+  width: 25%;
+  height: 20%;
+  float: left;
+}
+
+.link-block-25 {
+  width: 25%;
+  height: 20%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  float: left;
+}
+
+.link-block-25:hover {
+  background-color: rgba(0, 152, 255, .5);
+}
+
+.link-block-26 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-27 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-28 {
+  width: 25%;
+  height: 20%;
+}
+
+.link-block-29 {
+  width: 25%;
+  height: 20%;
+  margin-top: -3px;
+  padding-top: 0px;
+}
+
+.link-block-30 {
+  width: 25%;
+  height: 20%;
+  margin-top: -3px;
+}
+
+.link-block-31 {
+  width: 25%;
+  height: 20%;
+  margin-top: -3px;
+}
+
+.link-block-32 {
+  width: 25%;
+  height: 20%;
+  margin-top: -3px;
+}
+
+.link-block-32:hover {
+  background-color: rgba(0, 152, 255, .5);
+}
+
+.link-block-33 {
+  width: 25%;
+  height: 20%;
+  margin-top: -5px;
+}
+
+.link-block-34 {
+  width: 25%;
+  height: 20%;
+  margin-top: -5px;
+}
+
+.link-block-35 {
+  width: 25%;
+  height: 20%;
+  margin-top: -5px;
+}
+
+.link-block-36 {
+  width: 25%;
+  height: 20%;
+  margin-top: -5px;
+}
+
+.link-block-37 {
+  width: 25%;
+  height: 20%;
+  margin-top: -7px;
+}
+
+.link-block-37:hover {
+  background-color: rgba(0, 152, 255, .5);
+}
+
+.link-block-38 {
+  width: 25%;
+  height: 20%;
+  margin-top: -7px;
+}
+
+.link-block-39 {
+  width: 25%;
+  height: 20%;
+  margin-top: -7px;
+}
+
+.link-block-39:hover {
+  background-color: rgba(0, 152, 255, .5);
+}
+
+.link-block-40 {
+  width: 25%;
+  height: 20%;
+  margin-top: -7px;
+}
+
+.link-block-41 {
+  width: 25%;
+  height: 20%;
+  margin-top: -6px;
+}
+
+.link-block-42 {
+  width: 25%;
+  height: 20%;
+  margin-top: -6px;
+}
+
+.link-block-43 {
+  width: 25%;
+  height: 20%;
+  margin-top: -6px;
+}
+
+.link-block-44 {
+  width: 25%;
+  height: 20%;
+  margin-top: -6px;
+}
+
+@media (max-width: 767px) {
+  .div-block-9 {
+    width: 100%;
+  }
+}

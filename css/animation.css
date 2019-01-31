@@ -1,0 +1,199 @@
+/* Copyright (C) 2018 Mediakanzlei - All Rights Reserved
+ * You may not use, distribute and modify this code unless
+ * you purchased the MK-liquid_sidebar license.
+ *
+ * You should have received a copy of the XYZ license with
+ * this file. If not, please write to: info@mediakanzlei.ch
+ * or visit: www.mediakanzlei.ch
+
+ Contributors
+ --------------
+ This is the official list of the liquid sidebar project contributors.
+
+ * Mediakanzlei
+   - Marc Friedmann
+   - Daniel Burger
+*/
+
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.default_link {
+  cursor: default;
+}
+
+#tracking {
+  position: absolute;
+  opacity: 0;
+}
+
+/* creates a specific brand cursor */
+
+.button, .link-block-45, .active_link, .arrows {
+  cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAgCAYAAAD0S5PyAAAEI0lEQVRIiZ2VS0xcVRjH/+fcc++8H0BpQabYAloQSQDtQwPVaKwLNmqMC5MuTBfduHXhRuPSlYmJiSsTdVE3Rruxxpg2CnFhIlYSS4DwKEqBDMNjmMe9M+dhvjMMDtXEjl9yZu6cufd3vtf/uzDG1NcptZP9ReU294wxzzbs/+di9EGm1u/OlG9cG2JCIPrq1dssmhjBAxo/uO1y8PPNISgFUy5DrswPA+hrCmIKexPwS2CJFCAEdH6Htnubgui97TOmXARzBJjjwJQLtN3SDCRsgnJXPTfgDlDx6SraDMQ1shqG1gBjAHkSBICSTUHAhAtwDpA3nMNUK7QiTUEoBEZeWGM1mNZuMxBKQPHILvEYU81AFBNuFYeeULk0lVqawH9LLswYU/E/BNBjlPwKWr9zP0TYczklhNXyQeWNp8Dc0Hvy7ly49PUniFx67ao4M3y59MVHaXdg9CXv/PObphIYKHmBRWJvE8RAuIaqone24JzIIPT0i6hM/xhjkThC4xOQa8ueATy9m4O8twK34n/s37oOvbWB6CtXuvhBSFzvZCF6H4N37jlU524j+Ok7VOd/q/UNicwR4G3HbRuoP5dginno3CbkylwfeRLRu7m4OzAKb+g8gslvoLLr4C3HwJOtYBSirNQq5ggg8AHh2v+U+AMm8GMEOSZOPZpEJUD5+y9B37y9Ezq7BqcjY3+DmpnSphUM52DkHT/QrjEuXQ2b4j4qv07aB1g8RYKE0/kwnK4eVBfvgCfSNS+kBPPCMAQjwRLQ9QKCjAVTN2yXskQaJijBlArwnrgIuTADtboA3tJ+WDmeagPzQvYg26ShyC4ldEjnt8FjyRo9HEPk5Sswvo/K9BRYNA6WaqUTobY2wFOtcDq6oYv7VmdOZ3dBmGrFPRSf1uDxFE05GwLlhMru9g7CFPIIX5wAC0esd+GnLkHTofFUUfBY8h4J0CgJFolC5TZsab3BswhdeAG6kIdcnrVQfjwDuTQLlV2DNzJmDzV+aUmwWOJb3tH9ulz83SaNgE7HScjVeRiaK5xDrq/C6x9BdXbahkChB7euQ5zuhzc6PkWJ/dx78pkfWChsc2LDouaKJaG21qE2VuGk2gAvBBZP2oOsRhNpAqwC+MwWmyfSb7iPnwusbg4GnAXRA44LFo0BfhnGL1vPaAY7mR44J/tIjKo+7Ze9kbH3RaYXprCLRkVTVaxmlmdtaSGrdi80Oj4F4FM0vDLIPnAHz+bqVTpi9ZZnDLqYh9s/At7+0LuN86Ruu/xE5ho1k6kGRyEEtnAFJjwKZQbAzcZ58ve9XmjSKPmm3s6CxRL/mGC2q6nVo/E79w+luqUAPCJOD1gFs9C/zGkl663eBaAfwCKAauPLesk0Z8oYk6FnG3Pyv60xHPvuBLD/ADRKWJ4CBIC/AEU3J0qovwE2AAAAAElFTkSuQmCC'), pointer;
+}
+.button {
+  margin: 5px;
+}
+.paragraph {
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.call_to_action img {
+  width: 150px;
+  height: auto;
+  max-width: 100%;
+}
+.call_to_action.div-block-8 {
+  max-width: 85vw;
+  max-height: 85vh;
+  padding: 15px;
+}
+
+/* adding perspective and animation elements to container and divs */
+
+.w-container{
+  perspective: 3000px;
+}
+.div-block-8 {
+  transform-origin: 0% 0%;
+  transform-style: preserve-3d;
+  transition: transform .7s cubic-bezier(0.65, 0, 0.34, 1);
+}
+
+/* classes to style the js created page arrows */
+
+.arrows {
+  position: absolute;
+  top: 48%;
+  width: 35px;
+  height: 35px;
+  z-index: 99999;
+
+  transition: transform 0.3s
+}
+
+
+.background-arrow-right {
+  background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAFcElEQVR4nO3df2iVVRzH8e9zmVwNl8sitLCi/SDbdvcj5g8mxkz6SzMkSokkSYhEMSeE0a8RRPhHV0OoPyqGBf0RZtlGkK7N6Ta1wWp3Wz/QrdC/KtARYTnxPvHs+s07N6733Oec5znnPJ/3v3ff537veXEubP+MklR9LEmJtYSszElS9QQRzSJyeoloTzOl2kBtT1nAHKBtagZgDtA2lAOYA7TJ5QHMAdrEBIA5QJtUAcAcoE3IBzAHaJ2TAMwBWsckAnOA1qmcwHU7nj6ZnrjiDL7/2VLvZ0X2domOE6Vbmt3hLtsOLcgcR+jYpxXL9eLCpYnLq957ddn2f/rHGnY/1+vEYul8H+wQrXQo1rnXqenZ69Tgb90hlROYK5odL13x9o7GbX+fFoYmchuJ3K8AHU55AXNFc+JlDF27bePJzDdxvgE6jISAOQ+6af/Ly7df6h8FtN4VBMwBWv98AXNZ0GcArVdSgLmiOfEKQOuVVGAO0PqkBJgDdPgpBeYAHV6BAHMMvXW8b6Ty2cf7xaYBXUiBAnPxeXOrHm19s2HreN8woNUWCjD3P/TFXtxoRYUKzMVLiisBrSYtgLks6CFAy0krYC5eUlwNaDlpCcwB2n9aA3OyoPc5idUK19QyI4A5hn7hQk+qbP3qAbFpt9ElOho1aKOAudm33ZpY+3myHtA3z0hg7gbo78WmowFtNDB3DboO0NOzApjLhi5dtyry0GQbMOdBP/blvshDk63A3FToph/Epq9DJ52aRxSuqTSrgbkM9Lu1HvT9ax4WhnbI7TAVOhLAnAe9rm1/7fO/HxtY1LRkRGzaTOhIAXO33Dm//onODysz0A1WQ0cSmMtAf2Q1dKSBuWzou1c+9KPYtN7QAM7Kg36yu/VBm6ABPEM3QP8kNq0XNIBzdA16scnQAM6jKdAr6oyCBrBAk9AnDizecu5IvynQAC6g4kULGhj6rsa6n8WeECw0gH3kQT/Vc+ABnaEBLCGdoQEssWzohctrtIAGsII86A19n1RkoGt/EXsHudAAVlcsA/1xuR/oJCV63qFEwdAAVt8U6AVLqgKFBnBwTUJvPP1p+eYz7afuSFSMib1zYdAADr5YSdk9y54ZPHhfENAADq8p0LdXlf0qtkl+0AAOv0noTUOH7lUBDWB9mgpdWfqb2GYzQxfZeloGl4Ee/iI9fvbcqdbyNfOJqCL/j+NBkwfd6xK9gRusb7H4vOI4kfNnYRu6lx2iCdxgDfv34l+po1tarp491FEnvp0zeXN3Uepbwle0XsmE5QCsQSpgOQCHmEpYDsAhFAQsB+AACxKWA3AAhQHLAVhhYcJyAFaQDNhmd3ASdpfP/3wGYInJhJUVgCWkIywHYB/pDMsBuIBMgOUALJAHe2Tz61dHD3dqD8sBOI9MhOUAnCOTYTkAz5ANsByAs7IJlgOwpbBcpIFthuUiCRwFWC5SwFGC5SIBHEVYzmpgv7AOuS0vuoMdKnYLKiuBAXs9q4ABOz0rgDOwr6VHD3fVik/bCcsZDQzYm2ckMGDzzyhgwIpnBLBfWCLas9MdbFOxm+5pDQxY/2kJDFh5aQUMWPlpAQxYdYUK7MF+s+mV9Fh7N2AVFQowYIMrUGDABl8gwJf+uDDw9YaX4ue7vkuITwPWT0qBs2DrxacBKyMlwIDVJ6nAgNUvKcCA1TdfwIDVv4KAAWtOQsCANa+8gAFrbjmBx9q75w59cHDkfFe/MKxLdJwo3dLsDndF71j1yUlS9QQRzZK3UebGNlMKN1aDJP4eDFgdkwAMWJ3zAQxYEyoAGLAmJQAMWBPLAxiwJpcDGLA2NAMwYG0qCxiwNuYBn3DIeWsnpTqjfhjWRUT/ARFPNyxQpPauAAAAAElFTkSuQmCC');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0px 5px;
+  background-origin: content-box;
+  background-position: center;
+  right: 0%;
+}
+.background-arrow-left {
+  background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAB4CAYAAADWpl3sAAAFV0lEQVR4nO3df2jUdRzH8ff3m1mtiCas6A+jZla27aajZbqlbc0F4bIs+iMokfqj/pB0/SH9E6uIIuhMkiIwFkbOJCIzDMK1FQ7LkXc7d7XWFqVUIv3QFulh7Bs797atztt9v5/P9/v9/Hg9/zu4L7w+9+B7cNzBETKvTZRoTlJNNx9sFozNKUmJNiLa6JHXQESn+WBANiDGpTO4/wvIGjcTLgdkDSsVlwOyRvnF5YCsQUFxOSArnCguB2QFk4XLAVmhZONyQFagsHA5IWTP86SOsa2kU91E5HYQecv8Hn1uU3324isrTg5t33PTTM/FnRxDm5za/J3rkOv7zp3bdHP2zh0v5soun1P3TddHvUPb98x4DZAjjHGDvC1PxfV7LZAjKC5cDsghFjcuB+QQUgWXA7LEVMPlgCwhVXE5IAukOi4H5ADpgssB2UciuJUrl6fv2Pace2H5pYmodwO5hCThLoxjOwG5eLrjckAukAjuvFVN6dbOZ5XA5YA8JdNwOSAbjMtZjWw6Lmclsi24nFXILzuJFo+cDltwOSuQ/8WlBiJ/P1nSGZczGtl2XM5IZOBOzyhkMdzmVGvnM+eZhMsZgSwJd1FoA2NOa2TglpaWyEmn9naH6GnglpZWyIzrBPqcax8upwUycMVSGhm4clISGbhyUwoZuOGkBDJwwy1WZOBGUyzIwI22SJGBG0+RIIvgXru6JbViawdwBQoVGbhqFAoycNVKKjJw1UwKMnDVTggZuHoUCPklSkx+nwtcHfKFDFw9KwkZuHpXFBm4ZlQQGbhmNQ0ZuGaWRwau2c0683dvXrP/Uzp9jx7rLbuoohy4iucSORcEm+hV5E6M5Yho3J6XS8/cdso0euS0TNyZPk9wXef8lbdsq77n8PGRw58DW93ciWVPUKY7KPav2dGr89g1q38Atpq5U1cJYQ+OXANsNXMLrZKB/Vbtfd8DW40KInMi2L9khiuBrUZFkTkZ2F2LH/h27MjRfmBHX0nInAj20QOD12+9qrV+x9KHgB1xvpA5Eeyf96eBHXGBkLl2b6B7gzcgiP3g8CQ2CikhZDnYAzdMYL/TuGYI2OEkBZkTwf6pLwXskJKKzAFbrUJB5mRg77x1zdfAFitUZE4E+8d9qQWM/dex3w6GOtTQIkHmRLFfv+K2up3L1wLbZ5Eic0LYn30JbJ/FgsxJwv4K2MWLFZkTxL4R2MVTApmTgf1u88NZYE9PKWROBPtIT38VsKenJDInB/sR67GVRubEsA/ksXe1rUuf+v2PTKhDFU0LZE4E+7sPP1342pzGxAd3P24dtlbIHGM7RCv8Yo/u6pnEXp+yBVtLZG69l9kbHPuTRbZga43MycDefW+7sdhGIHMi2CPv7TUW2yhkThL2QVOwjUTmBLHrTME2GpmTgf3x2qf6c8fHDoU6NKSsQOYYm8i5yy929s33618tb6jREdsqZG6DN7DbJmwrkTlbsK1G5iRiZ0MdGjAgT0kCdpWK2EAukDTsE38ORrW5WEAukjD2ZUurVcAGcglJwK7qWff8/r9P5obj2A9kHwlgO+ktXUteKaufHwc2kAOkGzaQBdIFG8gSUh0byBKTiD0icxeQQ0gC9jyZ2EAOMVWwgRxBothbLllcue/JzX1BsYEcYUGxvfFxt/+FNxrOYp/KjfpZ7Ygc0fM8kcutL+lUNxG5HQ7RMr8vfe1j93/hzj7fS21+e8k5nnO6nQ7NJlFkJKckJdqIaGOQv4coEpBVTDI2kFVOEjaQdUgQG8g6FRAbyDrmExvIOlciNpBNaAZsIJvUObCBbGL/wT6LjAzFTlJNb/4BEf0D95OmuL2s6rQAAAAASUVORK5CYII=');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0px 5px;
+  background-origin: content-box;
+  background-position: center;
+  left: 0%;
+  display: none;
+}
+
+/* class to style the js created page counter */
+
+#pageCount {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  font-size: 25px;
+  color: white;
+  transform: translate(-50%, 0%);
+}
+
+#pageCount, .call_to_action {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
+
+/* box-shadow-animation */
+
+@keyframes box-shadow-animation {
+    25%  {box-shadow: none;}
+    45%  {box-shadow: 15px 17px 45px 2px rgba(0,0,0,0.35)}
+    60%  {opacity: 1; box-shadow: 15px 17px 70px 2px rgba(0,0,0,0.5)}
+    70%  {opacity: 1; box-shadow: 15px 17px 70px 2px rgba(0,0,0,0.0)}
+    80%  {opacity: 0; box-shadow: 15px 17px 70px 2px rgba(0,0,0,0.0)}
+    100% {opacity: 0; visibility: : hidden; box-shadow: 15px 17px 100px 2px rgba(0,0,0,0)}
+}
+
+/* The element to apply the animation to */
+
+.box-shadow-animation {
+    transform: rotateY(-90deg);
+    animation-name: box-shadow-animation;
+    animation-duration: .7s;
+    animation-timing-function: cubic-bezier(0.48, 0.95, 0.57999, 0.98);
+}
+
+/* box-shadow-animation-reverse */
+
+@keyframes box-shadow-animation-reverse {
+    0%   {opacity: 0; box-shadow: 15px 17px 100px 2px rgba(0,0,0,0)}
+    20%  {opacity: 0; box-shadow: 15px 17px 70px 2px rgba(0,0,0,0.0)}
+    30%  {opacity: 1; box-shadow: 15px 17px 70px 2px rgba(0,0,0,0.0)}
+    40%  {opacity: 1; box-shadow: 15px 17px 70px 2px rgba(0,0,0,0.5)}
+    55%  {box-shadow: 15px 17px 45px 2px rgba(0,0,0,0.35)}
+    100%  {box-shadow: none;}
+}
+
+/* The element to apply the animation to */
+
+.box-shadow-animation-reverse {
+    transform: rotateY(0deg);
+    animation-name: box-shadow-animation-reverse;
+    animation-duration: .7s;
+    animation-timing-function: cubic-bezier(0.48, 0.95, 0.57999, 0.98);
+}
+.image-4 {
+  backface-visibility: hidden;
+}
+.arrows:hover{ transform: scale(1.3); transform-origin: center; opacity: 0.8;}
+
+/* following elements disappear to maintain a clean add */
+
+@media screen and (max-width: 400px) , screen and (max-height: 500px) {
+   .paragraph, .button {
+     display: none;
+   }
+   #pageCount {
+     display: none;
+   }
+   .arrows {
+     width: 25px;
+     height: 25px;
+   }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .box-shadow-animation {
+      animation-name: none;
+      transform: none;
+      visibility: hidden;
+    }
+    .box-shadow-animation-reverse {
+      animation-name: none;
+      transform: none;
+      visibility: visible;
+    }
+    .arrows:hover{ transform: none; transform-origin: center; opacity: 1}
+
+    .button, .link-block-45, .active_link, .arrows {
+      cursor: url('../images/finger.cur'), pointer;
+    }
+}
+
+/* need to counter max-width set by webflow otherwise ad gets misplaced */
+
+@media screen and (max-width: 991px) {
+  .w-container {
+    max-width: none;
+}
